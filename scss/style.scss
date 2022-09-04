@@ -1,0 +1,14 @@
+// variables
+@import "./helper/variables";
+
+// mixin
+@import "./helper/mixin";
+
+// vendor
+@import "./vendor/slick-reset";
+
+// reset
+@import "./base/reset";
+
+// main scss
+@import "./layouts/index";

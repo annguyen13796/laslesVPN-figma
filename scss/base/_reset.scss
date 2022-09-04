@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: $white;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  line-height: $lh-1;
+  color: $black-2;
+}
+
+// button {
+//   border: unset;
+//   font-size: $fs-1;
+//   background-color: unset;
+//   cursor: pointer;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black-1;
+  font-weight: 500;
+}
+
+p,
+span {
+  color: $black-2;
+  font-size: $fs-1;
+  font-weight: 400;
+  line-height: calc($lh-3 / $fs-1);
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $white;
+  box-shadow: 0 42px 144px 0 rgb(13 16 37 / 6%);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  transition: all 0.3s;
+
+  &--primary {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: $rd-1;
+    border-color: $pink-1;
+    color: $white;
+    background-color: $pink-1;
+    font-weight: 700;
+    line-height: calc(25px / 16px);
+    // padding: $pd-6 $pd-7;
+    box-shadow: 0 20px 45px -5px rgba(245, 56, 56, 0.35);
+
+    // width: 250px;
+    // height: 60px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    &:hover {
+      background-color: $white;
+      color: $pink-1;
+    }
+  }
+
+  &--border {
+    border-style: solid;
+    border-color: $pink-2;
+    border-radius: $rd-2;
+    color: $pink-2;
+    font-weight: 500;
+
+    &:hover {
+      background-color: $pink-1;
+      color: $white;
+      box-shadow: 0 20px 45px -5px rgba(245, 56, 56, 0.35);
+    }
+  }
+}
+
+.heading {
+  margin-bottom: $mg-1;
+  &--primary {
+    font-size: $fs-5;
+    line-height: calc($lh-4 / $fs-5);
+  }
+
+  &--secondary {
+    font-size: $fs-3;
+    line-height: calc($lh-3 / $fs-3);
+    font-weight: 700;
+  }
+
+  &--small {
+    font-size: $fs-6;
+    line-height: calc($lh-3 / $fs-6);
+    font-weight: 500;
+  }
+}
+
+.div-555 {
+  max-width: 555px;
+}

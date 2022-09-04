@@ -1,0 +1,82 @@
+@import "./slick-theme";
+@import "./slick";
+
+.slick-list {
+  width: 1440px;
+
+  .slick-track {
+    display: flex;
+  }
+}
+
+.slick-dots li button:before {
+  content: "";
+}
+
+.slick-arrow {
+  width: 60px;
+  height: 60px;
+  top: unset;
+  right: 0;
+  bottom: -120px;
+  background: $white !important;
+  transition: all 0.5s ease-out;
+  border: 2px solid $pink-1 !important;
+  border-radius: 50% !important;
+  z-index: 5;
+  transform: unset;
+
+  &::before {
+    color: $pink-1 !important;
+    transition: all 0.5s ease-out;
+  }
+
+  &:hover {
+    background-color: $pink-1 !important;
+
+    &::before {
+      color: $white !important;
+    }
+  }
+}
+
+.slick-prev {
+  right: 80px !important;
+  left: unset;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+
+  .slick-dots {
+    bottom: unset;
+    margin-top: 83px;
+    display: flex !important;
+    gap: 0 15px;
+    justify-content: flex-start;
+    text-align: left;
+
+    li {
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      transition: all 0.5s ease-out;
+
+      button {
+        background-color: #dde0e4;
+        border-radius: $rd-1;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-out;
+      }
+
+      &.slick-active {
+        width: 45px;
+        button {
+          background-color: $pink-1 !important;
+          border-radius: $rd-1;
+        }
+      }
+    }
+  }
+}
